@@ -1,0 +1,756 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L automato-relay:G5LE-14 K?
+U 1 1 6015E597
+P 1850 4250
+F 0 "K?" V 1283 4250 50  0000 C CNN
+F 1 "G5LE-14" V 1374 4250 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 2300 4200 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 1850 4250 50  0001 C CNN
+	1    1850 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60165E6B
+P 1450 4100
+F 0 "#PWR?" H 1450 3850 50  0001 C CNN
+F 1 "GND" H 1300 4050 50  0001 C CNN
+F 2 "" H 1450 4100 50  0001 C CNN
+F 3 "" H 1450 4100 50  0001 C CNN
+	1    1450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4100 1450 4050
+Wire Wire Line
+	1450 4050 1550 4050
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 60167298
+P 2400 4450
+F 0 "SW?" H 2400 4700 50  0000 C CNN
+F 1 "SW_SPDT" H 2400 4800 50  0000 C CNN
+F 2 "" H 2400 4450 50  0001 C CNN
+F 3 "~" H 2400 4450 50  0001 C CNN
+	1    2400 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 4350 2200 4350
+Wire Wire Line
+	2150 4550 2200 4550
+Text GLabel 2650 4450 2    50   Input ~ 0
+ACL
+Text GLabel 2200 4050 2    50   Input ~ 0
+CTRL1
+Wire Wire Line
+	2150 4050 2200 4050
+$Comp
+L power:GND #PWR?
+U 1 1 601818EC
+P 1200 6000
+F 0 "#PWR?" H 1200 5750 50  0001 C CNN
+F 1 "GND" H 1205 5827 50  0001 C CNN
+F 2 "" H 1200 6000 50  0001 C CNN
+F 3 "" H 1200 6000 50  0001 C CNN
+	1    1200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 601826B4
+P 1300 5750
+F 0 "D?" V 1339 5632 50  0000 R CNN
+F 1 "LED" V 1248 5632 50  0000 R CNN
+F 2 "" H 1300 5750 50  0001 C CNN
+F 3 "~" H 1300 5750 50  0001 C CNN
+	1    1300 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601840A1
+P 1200 5350
+F 0 "R?" H 1000 5400 50  0000 L CNN
+F 1 "240k" H 950 5300 50  0000 L CNN
+F 2 "" V 1130 5350 50  0001 C CNN
+F 3 "~" H 1200 5350 50  0001 C CNN
+	1    1200 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 601856E8
+P 1100 5750
+F 0 "D?" V 1050 5550 50  0000 L CNN
+F 1 "D" V 1150 5550 50  0000 L CNN
+F 2 "" H 1100 5750 50  0001 C CNN
+F 3 "~" H 1100 5750 50  0001 C CNN
+	1    1100 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 5600 1200 5600
+Connection ~ 1200 5600
+Wire Wire Line
+	1200 5600 1300 5600
+Wire Wire Line
+	1100 5900 1200 5900
+Connection ~ 1200 5900
+Wire Wire Line
+	1200 5900 1300 5900
+Wire Wire Line
+	1200 5500 1200 5600
+Wire Wire Line
+	1200 5900 1200 6000
+Wire Wire Line
+	1200 5100 1200 5200
+$Comp
+L 74xx:74HC595 U?
+U 1 1 601DDF31
+P 7600 2000
+F 0 "U?" H 7800 2650 50  0000 C CNN
+F 1 "74HC595" H 7850 2550 50  0000 C CNN
+F 2 "" H 7600 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 7600 2000 50  0001 C CNN
+	1    7600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601E0249
+P 7600 2800
+F 0 "#PWR?" H 7600 2550 50  0001 C CNN
+F 1 "GND" H 7605 2627 50  0001 C CNN
+F 2 "" H 7600 2800 50  0001 C CNN
+F 3 "" H 7600 2800 50  0001 C CNN
+	1    7600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2700 7600 2800
+Text GLabel 8100 1600 2    50   Input ~ 0
+CTRL1
+Wire Wire Line
+	8000 1600 8100 1600
+Text GLabel 8100 1700 2    50   Input ~ 0
+CTRL2
+Text GLabel 8100 1800 2    50   Input ~ 0
+CTRL3
+Text GLabel 8100 1900 2    50   Input ~ 0
+CTRL4
+Wire Wire Line
+	8000 1700 8100 1700
+Wire Wire Line
+	8000 1800 8100 1800
+Wire Wire Line
+	8000 1900 8100 1900
+NoConn ~ 8000 2000
+NoConn ~ 8000 2200
+NoConn ~ 8000 2300
+NoConn ~ 8000 2100
+Text GLabel 7100 1600 0    50   Input ~ 0
+SDI
+Text GLabel 7100 1800 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	7100 1600 7200 1600
+Wire Wire Line
+	7100 1800 7200 1800
+Text GLabel 7100 2100 0    50   Input ~ 0
+LATCH
+Wire Wire Line
+	7100 2100 7200 2100
+$Comp
+L power:GND #PWR?
+U 1 1 601F84F8
+P 5050 1050
+F 0 "#PWR?" H 5050 800 50  0001 C CNN
+F 1 "GND" H 5055 877 50  0001 C CNN
+F 2 "" H 5050 1050 50  0001 C CNN
+F 3 "" H 5050 1050 50  0001 C CNN
+	1    5050 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1000 5050 1050
+Wire Wire Line
+	5150 1000 5150 1050
+Wire Wire Line
+	5250 1000 5250 1050
+Wire Wire Line
+	5350 1000 5350 1050
+$Comp
+L power:GND #PWR?
+U 1 1 60208E2A
+P 10250 1050
+F 0 "#PWR?" H 10250 800 50  0001 C CNN
+F 1 "GND" H 10255 877 50  0001 C CNN
+F 2 "" H 10250 1050 50  0001 C CNN
+F 3 "" H 10250 1050 50  0001 C CNN
+	1    10250 1050
+	0    1    1    0   
+$EndComp
+Text GLabel 5150 1050 3    50   Input ~ 0
+CLK
+Text GLabel 5250 1050 3    50   Input ~ 0
+SDI
+Text GLabel 5350 1050 3    50   Input ~ 0
+LATCH
+Text GLabel 10250 1150 0    50   Input ~ 0
+CLK
+Text GLabel 10250 1350 0    50   Input ~ 0
+LATCH
+Wire Wire Line
+	10300 1350 10250 1350
+Wire Wire Line
+	10250 1150 10300 1150
+Wire Wire Line
+	10250 1050 10300 1050
+Text GLabel 8100 2500 2    50   Input ~ 0
+SDO
+Wire Wire Line
+	8000 2500 8100 2500
+Text GLabel 10250 1250 0    50   Input ~ 0
+SDO
+Wire Wire Line
+	10300 1250 10250 1250
+$Comp
+L Connector:Screw_Terminal_01x05 J?
+U 1 1 602358DE
+P 5250 800
+F 0 "J?" V 5400 850 50  0000 R CNN
+F 1 "Screw_Terminal_01x05" V 5400 1150 50  0001 R CNN
+F 2 "" H 5250 800 50  0001 C CNN
+F 3 "~" H 5250 800 50  0001 C CNN
+	1    5250 800 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5450 1050 3    50   Input ~ 0
+3V3
+Wire Wire Line
+	5450 1000 5450 1050
+Text GLabel 7100 1900 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	7100 1900 7200 1900
+Text GLabel 7600 1300 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	7600 1300 7600 1400
+$Comp
+L Connector:Screw_Terminal_01x05 J?
+U 1 1 6023CC7C
+P 10500 1250
+F 0 "J?" H 10550 1600 50  0000 R CNN
+F 1 "Screw_Terminal_01x05" H 11600 1400 50  0001 R CNN
+F 2 "" H 10500 1250 50  0001 C CNN
+F 3 "~" H 10500 1250 50  0001 C CNN
+	1    10500 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 10250 1450 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	10300 1450 10250 1450
+$Comp
+L Converter_ACDC:HLK-PM03 PS?
+U 1 1 602425FA
+P 4100 2550
+F 0 "PS?" H 4100 2875 50  0000 C CNN
+F 1 "HLK-PM03" H 4100 2784 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_HiLink_HLK-PMxx" H 4100 2250 50  0001 C CNN
+F 3 "http://www.hlktech.net/product_detail.php?ProId=59" H 4500 2200 50  0001 C CNN
+	1    4100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60242AA4
+P 4600 2750
+F 0 "#PWR?" H 4600 2500 50  0001 C CNN
+F 1 "GND" H 4605 2577 50  0001 C CNN
+F 2 "" H 4600 2750 50  0001 C CNN
+F 3 "" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2650 4600 2650
+Wire Wire Line
+	4600 2650 4600 2750
+Text GLabel 4600 2450 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	4500 2450 4600 2450
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 60248A15
+P 1700 1350
+F 0 "J?" H 1850 1300 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2250 1350 50  0001 C CNN
+F 2 "" H 1700 1350 50  0001 C CNN
+F 3 "~" H 1700 1350 50  0001 C CNN
+	1    1700 1350
+	-1   0    0    1   
+$EndComp
+Text GLabel 3600 2650 0    50   Input ~ 0
+ACN
+Text GLabel 1650 5050 1    50   Input ~ 0
+ACN
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 6025D31A
+P 1650 5300
+F 0 "J?" V 1800 5250 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1650 5050 50  0001 C CNN
+F 2 "" H 1650 5300 50  0001 C CNN
+F 3 "~" H 1650 5300 50  0001 C CNN
+	1    1650 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 2650 3700 2650
+Wire Wire Line
+	3600 2450 3700 2450
+Text GLabel 3600 2450 0    50   Input ~ 0
+ACL
+Text GLabel 1950 1250 2    50   Input ~ 0
+ACL
+Text GLabel 1950 1350 2    50   Input ~ 0
+ACN
+Wire Wire Line
+	1900 1250 1950 1250
+Wire Wire Line
+	1900 1350 1950 1350
+Wire Wire Line
+	1650 5050 1650 5100
+Wire Wire Line
+	1200 5100 1550 5100
+Wire Wire Line
+	1550 4450 1550 5100
+Connection ~ 1550 5100
+$Comp
+L automato-relay:G5LE-14 K?
+U 1 1 6033905C
+P 4450 4300
+F 0 "K?" V 3883 4300 50  0000 C CNN
+F 1 "G5LE-14" V 3974 4300 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 4900 4250 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 4450 4300 50  0001 C CNN
+	1    4450 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60339092
+P 4050 4150
+F 0 "#PWR?" H 4050 3900 50  0001 C CNN
+F 1 "GND" H 3900 4100 50  0001 C CNN
+F 2 "" H 4050 4150 50  0001 C CNN
+F 3 "" H 4050 4150 50  0001 C CNN
+	1    4050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4150 4050 4100
+Wire Wire Line
+	4050 4100 4150 4100
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 6033909E
+P 5000 4500
+F 0 "SW?" H 5000 4750 50  0000 C CNN
+F 1 "SW_SPDT" H 5000 4850 50  0000 C CNN
+F 2 "" H 5000 4500 50  0001 C CNN
+F 3 "~" H 5000 4500 50  0001 C CNN
+	1    5000 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 4400 4800 4400
+Wire Wire Line
+	4750 4600 4800 4600
+Text GLabel 5250 4500 2    50   Input ~ 0
+ACL
+Text GLabel 4800 4100 2    50   Input ~ 0
+CTRL1
+Wire Wire Line
+	4750 4100 4800 4100
+Wire Wire Line
+	5200 4500 5250 4500
+$Comp
+L power:GND #PWR?
+U 1 1 603390AE
+P 3800 6050
+F 0 "#PWR?" H 3800 5800 50  0001 C CNN
+F 1 "GND" H 3805 5877 50  0001 C CNN
+F 2 "" H 3800 6050 50  0001 C CNN
+F 3 "" H 3800 6050 50  0001 C CNN
+	1    3800 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 603390B8
+P 3900 5800
+F 0 "D?" V 3939 5682 50  0000 R CNN
+F 1 "LED" V 3848 5682 50  0000 R CNN
+F 2 "" H 3900 5800 50  0001 C CNN
+F 3 "~" H 3900 5800 50  0001 C CNN
+	1    3900 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603390C2
+P 3800 5400
+F 0 "R?" H 3600 5450 50  0000 L CNN
+F 1 "240k" H 3550 5350 50  0000 L CNN
+F 2 "" V 3730 5400 50  0001 C CNN
+F 3 "~" H 3800 5400 50  0001 C CNN
+	1    3800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 603390CC
+P 3700 5800
+F 0 "D?" V 3650 5600 50  0000 L CNN
+F 1 "D" V 3750 5600 50  0000 L CNN
+F 2 "" H 3700 5800 50  0001 C CNN
+F 3 "~" H 3700 5800 50  0001 C CNN
+	1    3700 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 5650 3800 5650
+Connection ~ 3800 5650
+Wire Wire Line
+	3800 5650 3900 5650
+Wire Wire Line
+	3700 5950 3800 5950
+Connection ~ 3800 5950
+Wire Wire Line
+	3800 5950 3900 5950
+Wire Wire Line
+	3800 5550 3800 5650
+Wire Wire Line
+	3800 5950 3800 6050
+Wire Wire Line
+	3800 5150 3800 5250
+Text GLabel 4250 5100 1    50   Input ~ 0
+ACN
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 603390E0
+P 4250 5350
+F 0 "J?" V 4400 5300 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 4250 5100 50  0001 C CNN
+F 2 "" H 4250 5350 50  0001 C CNN
+F 3 "~" H 4250 5350 50  0001 C CNN
+	1    4250 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 5100 4250 5150
+Wire Wire Line
+	3800 5150 4150 5150
+Wire Wire Line
+	4150 4500 4150 5150
+Connection ~ 4150 5150
+$Comp
+L automato-relay:G5LE-14 K?
+U 1 1 6034756A
+P 7300 4300
+F 0 "K?" V 6733 4300 50  0000 C CNN
+F 1 "G5LE-14" V 6824 4300 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 7750 4250 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 7300 4300 50  0001 C CNN
+	1    7300 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603475A0
+P 6900 4150
+F 0 "#PWR?" H 6900 3900 50  0001 C CNN
+F 1 "GND" H 6750 4100 50  0001 C CNN
+F 2 "" H 6900 4150 50  0001 C CNN
+F 3 "" H 6900 4150 50  0001 C CNN
+	1    6900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4150 6900 4100
+Wire Wire Line
+	6900 4100 7000 4100
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 603475AC
+P 7850 4500
+F 0 "SW?" H 7850 4750 50  0000 C CNN
+F 1 "SW_SPDT" H 7850 4850 50  0000 C CNN
+F 2 "" H 7850 4500 50  0001 C CNN
+F 3 "~" H 7850 4500 50  0001 C CNN
+	1    7850 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 4400 7650 4400
+Wire Wire Line
+	7600 4600 7650 4600
+Text GLabel 8100 4500 2    50   Input ~ 0
+ACL
+Text GLabel 7650 4100 2    50   Input ~ 0
+CTRL1
+Wire Wire Line
+	7600 4100 7650 4100
+Wire Wire Line
+	8050 4500 8100 4500
+$Comp
+L power:GND #PWR?
+U 1 1 603475BC
+P 6650 6050
+F 0 "#PWR?" H 6650 5800 50  0001 C CNN
+F 1 "GND" H 6655 5877 50  0001 C CNN
+F 2 "" H 6650 6050 50  0001 C CNN
+F 3 "" H 6650 6050 50  0001 C CNN
+	1    6650 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 603475C6
+P 6750 5800
+F 0 "D?" V 6789 5682 50  0000 R CNN
+F 1 "LED" V 6698 5682 50  0000 R CNN
+F 2 "" H 6750 5800 50  0001 C CNN
+F 3 "~" H 6750 5800 50  0001 C CNN
+	1    6750 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603475D0
+P 6650 5400
+F 0 "R?" H 6450 5450 50  0000 L CNN
+F 1 "240k" H 6400 5350 50  0000 L CNN
+F 2 "" V 6580 5400 50  0001 C CNN
+F 3 "~" H 6650 5400 50  0001 C CNN
+	1    6650 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 603475DA
+P 6550 5800
+F 0 "D?" V 6500 5600 50  0000 L CNN
+F 1 "D" V 6600 5600 50  0000 L CNN
+F 2 "" H 6550 5800 50  0001 C CNN
+F 3 "~" H 6550 5800 50  0001 C CNN
+	1    6550 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 5650 6650 5650
+Connection ~ 6650 5650
+Wire Wire Line
+	6650 5650 6750 5650
+Wire Wire Line
+	6550 5950 6650 5950
+Connection ~ 6650 5950
+Wire Wire Line
+	6650 5950 6750 5950
+Wire Wire Line
+	6650 5550 6650 5650
+Wire Wire Line
+	6650 5950 6650 6050
+Wire Wire Line
+	6650 5150 6650 5250
+Text GLabel 7100 5100 1    50   Input ~ 0
+ACN
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 603475EE
+P 7100 5350
+F 0 "J?" V 7250 5300 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 7100 5100 50  0001 C CNN
+F 2 "" H 7100 5350 50  0001 C CNN
+F 3 "~" H 7100 5350 50  0001 C CNN
+	1    7100 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 5100 7100 5150
+Wire Wire Line
+	6650 5150 7000 5150
+Wire Wire Line
+	7000 4500 7000 5150
+Connection ~ 7000 5150
+$Comp
+L automato-relay:G5LE-14 K?
+U 1 1 603475FC
+P 9900 4350
+F 0 "K?" V 9333 4350 50  0000 C CNN
+F 1 "G5LE-14" V 9424 4350 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 10350 4300 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 9900 4350 50  0001 C CNN
+	1    9900 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60347606
+P 9500 4200
+F 0 "#PWR?" H 9500 3950 50  0001 C CNN
+F 1 "GND" H 9350 4150 50  0001 C CNN
+F 2 "" H 9500 4200 50  0001 C CNN
+F 3 "" H 9500 4200 50  0001 C CNN
+	1    9500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4200 9500 4150
+Wire Wire Line
+	9500 4150 9600 4150
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 60347612
+P 10450 4550
+F 0 "SW?" H 10450 4800 50  0000 C CNN
+F 1 "SW_SPDT" H 10450 4900 50  0000 C CNN
+F 2 "" H 10450 4550 50  0001 C CNN
+F 3 "~" H 10450 4550 50  0001 C CNN
+	1    10450 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10200 4450 10250 4450
+Wire Wire Line
+	10200 4650 10250 4650
+Text GLabel 10700 4550 2    50   Input ~ 0
+ACL
+Text GLabel 10250 4150 2    50   Input ~ 0
+CTRL1
+Wire Wire Line
+	10200 4150 10250 4150
+Wire Wire Line
+	10650 4550 10700 4550
+$Comp
+L power:GND #PWR?
+U 1 1 60347622
+P 9250 6100
+F 0 "#PWR?" H 9250 5850 50  0001 C CNN
+F 1 "GND" H 9255 5927 50  0001 C CNN
+F 2 "" H 9250 6100 50  0001 C CNN
+F 3 "" H 9250 6100 50  0001 C CNN
+	1    9250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6034762C
+P 9350 5850
+F 0 "D?" V 9389 5732 50  0000 R CNN
+F 1 "LED" V 9298 5732 50  0000 R CNN
+F 2 "" H 9350 5850 50  0001 C CNN
+F 3 "~" H 9350 5850 50  0001 C CNN
+	1    9350 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60347636
+P 9250 5450
+F 0 "R?" H 9050 5500 50  0000 L CNN
+F 1 "240k" H 9000 5400 50  0000 L CNN
+F 2 "" V 9180 5450 50  0001 C CNN
+F 3 "~" H 9250 5450 50  0001 C CNN
+	1    9250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 60347640
+P 9150 5850
+F 0 "D?" V 9100 5650 50  0000 L CNN
+F 1 "D" V 9200 5650 50  0000 L CNN
+F 2 "" H 9150 5850 50  0001 C CNN
+F 3 "~" H 9150 5850 50  0001 C CNN
+	1    9150 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 5700 9250 5700
+Connection ~ 9250 5700
+Wire Wire Line
+	9250 5700 9350 5700
+Wire Wire Line
+	9150 6000 9250 6000
+Connection ~ 9250 6000
+Wire Wire Line
+	9250 6000 9350 6000
+Wire Wire Line
+	9250 5600 9250 5700
+Wire Wire Line
+	9250 6000 9250 6100
+Wire Wire Line
+	9250 5200 9250 5300
+Text GLabel 9700 5150 1    50   Input ~ 0
+ACN
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 60347654
+P 9700 5400
+F 0 "J?" V 9850 5350 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 9700 5150 50  0001 C CNN
+F 2 "" H 9700 5400 50  0001 C CNN
+F 3 "~" H 9700 5400 50  0001 C CNN
+	1    9700 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 5150 9700 5200
+Wire Wire Line
+	9250 5200 9600 5200
+Wire Wire Line
+	9600 4550 9600 5200
+Connection ~ 9600 5200
+Wire Wire Line
+	2600 4450 2650 4450
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 603A21E6
+P 10500 2350
+F 0 "J?" H 10650 2300 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 11050 2350 50  0001 C CNN
+F 2 "" H 10500 2350 50  0001 C CNN
+F 3 "~" H 10500 2350 50  0001 C CNN
+	1    10500 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 10250 2450 0    50   Input ~ 0
+ACL
+Text GLabel 10250 2350 0    50   Input ~ 0
+ACN
+Wire Wire Line
+	10300 2450 10250 2450
+Wire Wire Line
+	10300 2350 10250 2350
+$EndSCHEMATC

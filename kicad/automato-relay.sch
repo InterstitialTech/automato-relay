@@ -39,22 +39,11 @@ Wire Wire Line
 	1900 4000 1900 3950
 Wire Wire Line
 	1900 3950 2000 3950
-$Comp
-L Switch:SW_SPDT SW1
-U 1 1 60167298
-P 2850 4350
-F 0 "SW1" H 2850 4600 50  0000 C CNN
-F 1 "SW_SPDT" H 2850 4700 50  0000 C CNN
-F 2 "" H 2850 4350 50  0001 C CNN
-F 3 "~" H 2850 4350 50  0001 C CNN
-	1    2850 4350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2600 4250 2650 4250
 Wire Wire Line
 	2600 4450 2650 4450
-Text GLabel 3100 4350 2    50   Input ~ 0
+Text GLabel 2650 4450 2    50   Input ~ 0
 ACL
 Text GLabel 2650 3950 2    50   Input ~ 0
 CTRL1
@@ -371,29 +360,16 @@ Wire Wire Line
 	4000 4000 4000 3950
 Wire Wire Line
 	4000 3950 4100 3950
-$Comp
-L Switch:SW_SPDT SW2
-U 1 1 6033909E
-P 4950 4350
-F 0 "SW2" H 4950 4600 50  0000 C CNN
-F 1 "SW_SPDT" H 4950 4700 50  0000 C CNN
-F 2 "" H 4950 4350 50  0001 C CNN
-F 3 "~" H 4950 4350 50  0001 C CNN
-	1    4950 4350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4700 4250 4750 4250
 Wire Wire Line
 	4700 4450 4750 4450
-Text GLabel 5200 4350 2    50   Input ~ 0
+Text GLabel 4750 4450 2    50   Input ~ 0
 ACL
 Text GLabel 4750 3950 2    50   Input ~ 0
 CTRL2
 Wire Wire Line
 	4700 3950 4750 3950
-Wire Wire Line
-	5150 4350 5200 4350
 $Comp
 L power:GND #PWR03
 U 1 1 603390AE
@@ -500,29 +476,16 @@ Wire Wire Line
 	6100 4000 6100 3950
 Wire Wire Line
 	6100 3950 6200 3950
-$Comp
-L Switch:SW_SPDT SW3
-U 1 1 603475AC
-P 7050 4350
-F 0 "SW3" H 7050 4600 50  0000 C CNN
-F 1 "SW_SPDT" H 7050 4700 50  0000 C CNN
-F 2 "" H 7050 4350 50  0001 C CNN
-F 3 "~" H 7050 4350 50  0001 C CNN
-	1    7050 4350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6800 4250 6850 4250
 Wire Wire Line
 	6800 4450 6850 4450
-Text GLabel 7300 4350 2    50   Input ~ 0
+Text GLabel 6850 4450 2    50   Input ~ 0
 ACL
 Text GLabel 6850 3950 2    50   Input ~ 0
 CTRL3
 Wire Wire Line
 	6800 3950 6850 3950
-Wire Wire Line
-	7250 4350 7300 4350
 $Comp
 L power:GND #PWR07
 U 1 1 603475BC
@@ -629,29 +592,16 @@ Wire Wire Line
 	8150 4000 8150 3950
 Wire Wire Line
 	8150 3950 8250 3950
-$Comp
-L Switch:SW_SPDT SW4
-U 1 1 60347612
-P 9100 4350
-F 0 "SW4" H 9100 4600 50  0000 C CNN
-F 1 "SW_SPDT" H 9100 4700 50  0000 C CNN
-F 2 "" H 9100 4350 50  0001 C CNN
-F 3 "~" H 9100 4350 50  0001 C CNN
-	1    9100 4350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8850 4250 8900 4250
 Wire Wire Line
 	8850 4450 8900 4450
-Text GLabel 9350 4350 2    50   Input ~ 0
+Text GLabel 8900 4450 2    50   Input ~ 0
 ACL
 Text GLabel 8900 3950 2    50   Input ~ 0
 CTRL4
 Wire Wire Line
 	8850 3950 8900 3950
-Wire Wire Line
-	9300 4350 9350 4350
 $Comp
 L power:GND #PWR010
 U 1 1 60347622
@@ -732,8 +682,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 4350 8250 5000
 Connection ~ 8250 5000
-Wire Wire Line
-	3050 4350 3100 4350
 $Comp
 L Connector:Screw_Terminal_01x02 J8
 U 1 1 603A21E6
@@ -753,4 +701,8 @@ Wire Wire Line
 	9750 2300 9700 2300
 Wire Wire Line
 	9750 2200 9700 2200
+NoConn ~ 2650 4250
+NoConn ~ 4750 4250
+NoConn ~ 6850 4250
+NoConn ~ 8900 4250
 $EndSCHEMATC

@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 60165E6B
-P 1600 4400
-F 0 "#PWR02" H 1600 4150 50  0001 C CNN
-F 1 "GND" H 1450 4350 50  0001 C CNN
-F 2 "" H 1600 4400 50  0001 C CNN
-F 3 "" H 1600 4400 50  0001 C CNN
-	1    1600 4400
+P 1600 4650
+F 0 "#PWR02" H 1600 4400 50  0001 C CNN
+F 1 "GND" H 1450 4600 50  0001 C CNN
+F 2 "" H 1600 4650 50  0001 C CNN
+F 3 "" H 1600 4650 50  0001 C CNN
+	1    1600 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -41,7 +41,7 @@ Wire Wire Line
 	2550 4500 2600 4500
 Text GLabel 2600 4500 2    50   Input ~ 0
 ACL
-Text GLabel 1300 4200 0    50   Input ~ 0
+Text GLabel 1200 4200 0    50   Input ~ 0
 CTRL1
 Wire Wire Line
 	2550 4000 2600 4000
@@ -314,7 +314,7 @@ Wire Wire Line
 	5200 4450 5250 4450
 Text GLabel 5250 4450 2    50   Input ~ 0
 ACL
-Text GLabel 3950 4150 0    50   Input ~ 0
+Text GLabel 3850 4150 0    50   Input ~ 0
 CTRL2
 Wire Wire Line
 	5200 3950 5250 3950
@@ -392,7 +392,7 @@ Wire Wire Line
 	7800 4450 7850 4450
 Text GLabel 7850 4450 2    50   Input ~ 0
 ACL
-Text GLabel 6550 4150 0    50   Input ~ 0
+Text GLabel 6450 4150 0    50   Input ~ 0
 CTRL3
 Wire Wire Line
 	7800 3950 7850 3950
@@ -470,7 +470,7 @@ Wire Wire Line
 	10400 4450 10450 4450
 Text GLabel 10450 4450 2    50   Input ~ 0
 ACL
-Text GLabel 9150 4150 0    50   Input ~ 0
+Text GLabel 9050 4150 0    50   Input ~ 0
 CTRL4
 Wire Wire Line
 	10400 3950 10450 3950
@@ -551,32 +551,10 @@ Text GLabel 6850 5900 3    50   Input ~ 0
 ACN
 Text GLabel 9450 5900 3    50   Input ~ 0
 ACN
-$Comp
-L Transistor_FET:DMG3418L Q1
-U 1 1 6025169E
-P 1500 4200
-F 0 "Q1" H 1300 4500 50  0000 L CNN
-F 1 "DMG3418L" H 1100 4400 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1700 4125 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/DMG3418L.pdf" H 1500 4200 50  0001 L CNN
-	1    1500 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1600 4000 1950 4000
 Text GLabel 2600 4000 2    50   Input ~ 0
 3V3
-$Comp
-L power:GND #PWR01
-U 1 1 6025E6F9
-P 4250 4350
-F 0 "#PWR01" H 4250 4100 50  0001 C CNN
-F 1 "GND" H 4100 4300 50  0001 C CNN
-F 2 "" H 4250 4350 50  0001 C CNN
-F 3 "" H 4250 4350 50  0001 C CNN
-	1    4250 4350
-	1    0    0    -1  
-$EndComp
 $Comp
 L Transistor_FET:DMG3418L Q2
 U 1 1 6025E70C
@@ -591,17 +569,6 @@ $EndComp
 Wire Wire Line
 	4250 3950 4600 3950
 $Comp
-L power:GND #PWR03
-U 1 1 6026325E
-P 6850 4350
-F 0 "#PWR03" H 6850 4100 50  0001 C CNN
-F 1 "GND" H 6700 4300 50  0001 C CNN
-F 2 "" H 6850 4350 50  0001 C CNN
-F 3 "" H 6850 4350 50  0001 C CNN
-	1    6850 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_FET:DMG3418L Q3
 U 1 1 60263271
 P 6750 4150
@@ -614,17 +581,6 @@ F 3 "http://www.diodes.com/assets/Datasheets/DMG3418L.pdf" H 6750 4150 50  0001 
 $EndComp
 Wire Wire Line
 	6850 3950 7200 3950
-$Comp
-L power:GND #PWR04
-U 1 1 602684FF
-P 9450 4350
-F 0 "#PWR04" H 9450 4100 50  0001 C CNN
-F 1 "GND" H 9300 4300 50  0001 C CNN
-F 2 "" H 9450 4350 50  0001 C CNN
-F 3 "" H 9450 4350 50  0001 C CNN
-	1    9450 4350
-	1    0    0    -1  
-$EndComp
 $Comp
 L Transistor_FET:DMG3418L Q4
 U 1 1 60268512
@@ -737,4 +693,156 @@ Wire Wire Line
 	7400 4950 7400 5000
 Wire Wire Line
 	4800 4950 4800 5000
+$Comp
+L Device:R R5
+U 1 1 6030A4D9
+P 1250 4400
+F 0 "R5" H 1320 4446 50  0000 L CNN
+F 1 "100k" H 1320 4355 50  0000 L CNN
+F 2 "" V 1180 4400 50  0001 C CNN
+F 3 "~" H 1250 4400 50  0001 C CNN
+	1    1250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4200 1250 4200
+Wire Wire Line
+	1250 4200 1250 4250
+Connection ~ 1250 4200
+Wire Wire Line
+	1250 4200 1300 4200
+Wire Wire Line
+	1250 4550 1250 4600
+Wire Wire Line
+	1250 4600 1600 4600
+Wire Wire Line
+	1600 4400 1600 4600
+Connection ~ 1600 4600
+$Comp
+L power:GND #PWR01
+U 1 1 6031750C
+P 4250 4600
+F 0 "#PWR01" H 4250 4350 50  0001 C CNN
+F 1 "GND" H 4100 4550 50  0001 C CNN
+F 2 "" H 4250 4600 50  0001 C CNN
+F 3 "" H 4250 4600 50  0001 C CNN
+	1    4250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 6031751E
+P 3900 4350
+F 0 "R6" H 3970 4396 50  0000 L CNN
+F 1 "100k" H 3970 4305 50  0000 L CNN
+F 2 "" V 3830 4350 50  0001 C CNN
+F 3 "~" H 3900 4350 50  0001 C CNN
+	1    3900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4500 3900 4550
+Wire Wire Line
+	3900 4550 4250 4550
+Wire Wire Line
+	4250 4350 4250 4550
+Connection ~ 4250 4550
+Wire Wire Line
+	3850 4150 3900 4150
+Wire Wire Line
+	3900 4150 3900 4200
+Connection ~ 3900 4150
+Wire Wire Line
+	3900 4150 3950 4150
+$Comp
+L Transistor_FET:DMG3418L Q1
+U 1 1 6025169E
+P 1500 4200
+F 0 "Q1" H 1300 4500 50  0000 L CNN
+F 1 "DMG3418L" H 1100 4400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1700 4125 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMG3418L.pdf" H 1500 4200 50  0001 L CNN
+	1    1500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4550 4250 4600
+Wire Wire Line
+	1600 4600 1600 4650
+$Comp
+L power:GND #PWR03
+U 1 1 60330C2B
+P 6850 4600
+F 0 "#PWR03" H 6850 4350 50  0001 C CNN
+F 1 "GND" H 6700 4550 50  0001 C CNN
+F 2 "" H 6850 4600 50  0001 C CNN
+F 3 "" H 6850 4600 50  0001 C CNN
+	1    6850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 60330C3D
+P 6500 4350
+F 0 "R7" H 6570 4396 50  0000 L CNN
+F 1 "100k" H 6570 4305 50  0000 L CNN
+F 2 "" V 6430 4350 50  0001 C CNN
+F 3 "~" H 6500 4350 50  0001 C CNN
+	1    6500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4500 6500 4550
+Wire Wire Line
+	6500 4550 6850 4550
+Wire Wire Line
+	6850 4350 6850 4550
+Connection ~ 6850 4550
+Wire Wire Line
+	6850 4550 6850 4600
+Wire Wire Line
+	6450 4150 6500 4150
+Wire Wire Line
+	6500 4150 6500 4200
+Connection ~ 6500 4150
+Wire Wire Line
+	6500 4150 6550 4150
+$Comp
+L power:GND #PWR04
+U 1 1 6033C766
+P 9450 4600
+F 0 "#PWR04" H 9450 4350 50  0001 C CNN
+F 1 "GND" H 9300 4550 50  0001 C CNN
+F 2 "" H 9450 4600 50  0001 C CNN
+F 3 "" H 9450 4600 50  0001 C CNN
+	1    9450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 6033C778
+P 9100 4350
+F 0 "R8" H 9170 4396 50  0000 L CNN
+F 1 "100k" H 9170 4305 50  0000 L CNN
+F 2 "" V 9030 4350 50  0001 C CNN
+F 3 "~" H 9100 4350 50  0001 C CNN
+	1    9100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4500 9100 4550
+Wire Wire Line
+	9100 4550 9450 4550
+Wire Wire Line
+	9450 4350 9450 4550
+Connection ~ 9450 4550
+Wire Wire Line
+	9450 4550 9450 4600
+Wire Wire Line
+	9150 4150 9100 4150
+Wire Wire Line
+	9100 4150 9100 4200
+Connection ~ 9100 4150
+Wire Wire Line
+	9100 4150 9050 4150
 $EndSCHEMATC

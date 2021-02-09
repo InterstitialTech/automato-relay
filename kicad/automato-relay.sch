@@ -170,12 +170,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR012
 U 1 1 60208E2A
-P 12050 1900
-F 0 "#PWR012" H 12050 1650 50  0001 C CNN
-F 1 "GND" H 12055 1727 50  0001 C CNN
-F 2 "" H 12050 1900 50  0001 C CNN
-F 3 "" H 12050 1900 50  0001 C CNN
-	1    12050 1900
+P 11950 2350
+F 0 "#PWR012" H 11950 2100 50  0001 C CNN
+F 1 "GND" H 11955 2177 50  0001 C CNN
+F 2 "" H 11950 2350 50  0001 C CNN
+F 3 "" H 11950 2350 50  0001 C CNN
+	1    11950 2350
 	0    1    1    0   
 $EndComp
 Text GLabel 6500 1300 3    50   Input ~ 0
@@ -184,24 +184,24 @@ Text GLabel 6600 1300 3    50   Input ~ 0
 SDI
 Text GLabel 6700 1300 3    50   Input ~ 0
 LATCH
-Text GLabel 12050 2000 0    50   Input ~ 0
+Text GLabel 11950 2450 0    50   Input ~ 0
 CLK
-Text GLabel 12050 2200 0    50   Input ~ 0
+Text GLabel 11950 2650 0    50   Input ~ 0
 LATCH
 Wire Wire Line
-	12100 2200 12050 2200
+	12000 2650 11950 2650
 Wire Wire Line
-	12050 2000 12100 2000
+	11950 2450 12000 2450
 Wire Wire Line
-	12050 1900 12100 1900
+	11950 2350 12000 2350
 Text GLabel 9200 2600 2    50   Input ~ 0
 SDO
 Wire Wire Line
 	9150 2600 9200 2600
-Text GLabel 12050 2100 0    50   Input ~ 0
+Text GLabel 11950 2550 0    50   Input ~ 0
 SDO
 Wire Wire Line
-	12100 2100 12050 2100
+	12000 2550 11950 2550
 $Comp
 L Connector:Screw_Terminal_01x05 J4
 U 1 1 602358DE
@@ -225,21 +225,6 @@ Text GLabel 8750 1450 1    50   Input ~ 0
 3V3
 Wire Wire Line
 	8750 1450 8750 1500
-$Comp
-L Connector:Screw_Terminal_01x05 J7
-U 1 1 6023CC7C
-P 12300 2100
-F 0 "J7" H 12350 2450 50  0000 R CNN
-F 1 "Screw_Terminal_01x05" H 13400 2250 50  0001 R CNN
-F 2 "" H 12300 2100 50  0001 C CNN
-F 3 "~" H 12300 2100 50  0001 C CNN
-	1    12300 2100
-	1    0    0    -1  
-$EndComp
-Text GLabel 12050 2300 0    50   Input ~ 0
-3V3
-Wire Wire Line
-	12100 2300 12050 2300
 $Comp
 L Converter_ACDC:HLK-PM03 PS1
 U 1 1 602425FA
@@ -884,4 +869,15 @@ F 3 "" H 8300 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8300 2350 8300 2300
+$Comp
+L Connector:Screw_Terminal_01x04 J7
+U 1 1 60283F9B
+P 12200 2450
+F 0 "J7" H 12150 2700 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 12280 2351 50  0001 L CNN
+F 2 "" H 12200 2450 50  0001 C CNN
+F 3 "~" H 12200 2450 50  0001 C CNN
+	1    12200 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,13 @@
+Reference,Quantity,Value,Manufacturer,Manufacturer Part Number,Digikey Part Number
+"D1, D3, D5, D7",4,D,ON Semiconductor,BAS16LT1G,BAS16LT1GOSCT-ND
+"D2, D4, D6, D8",4,LED,Broadcom Limited,HLMP-Q156-H0011,516-HLMP-Q156-H0011CT-ND
+"J1, J3, J5, J6, J8",5,TE-3-213598-4,TE Connectivity AMP Connectors,3-213598-4,3-213598-4-ND
+J2,1,Screw_Terminal_01x03,Phoenix Contact,1935789,277-6072-ND
+J4,1,Screw_Terminal_01x05,Phoenix Contact,1935190,277-1580-ND
+J7,1,Screw_Terminal_01x04,Phoenix Contact,1984633,277-1860-ND
+"K1, K2, K3, K4",4,G5LE-14,Omron Electronics Inc-EMC Div,G5LE-14 DC3,Z3326-ND
+PS1,1,HLK-PM03,Hi-Link,HLK-PM03,
+"Q1, Q2, Q3, Q4",4,DMG3418L,Diodes Incorporated,DMG3418L-7,DMG3418L-7DICT-ND
+"R1, R3, R6, R8",4,240k,Yageo,RC0805FR-07240KL,311-240KCRCT-ND
+"R2, R4, R5, R7",4,100k,Yageo,RC0805FR-07100KL,311-100KCRCT-ND
+U1,1,74HC595,Toshiba Semiconductor and Storage,74HC595D,74HC595DCT-ND

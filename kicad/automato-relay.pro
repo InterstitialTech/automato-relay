@@ -1,4 +1,4 @@
-update=2/22/2021 7:56:42 PM
+update=2/24/2021 8:15:58 PM
 version=1
 last_client=kicad
 [general]
@@ -51,6 +51,12 @@ TrackWidth10=7
 TrackWidth11=10
 ViaDiameter1=0.8
 ViaDrill1=0.4
+ViaDiameter2=1.25
+ViaDrill2=0.7
+ViaDiameter3=1.5
+ViaDrill3=1
+ViaDiameter4=6
+ViaDrill4=3.35
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -257,9 +263,20 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=EARTH
+Clearance=1
+TrackWidth=0.25
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=HV
 Clearance=1.75
-TrackWidth=6
+TrackWidth=8
 ViaDiameter=2
 ViaDrill=1
 uViaDiameter=0.3

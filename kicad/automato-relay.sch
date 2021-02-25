@@ -4,10 +4,10 @@ EELAYER END
 $Descr User 13780 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
+Title "Automato Relay Rev 1"
+Date "2021-02-25"
 Rev ""
-Comp ""
+Comp "Interstitial Technology"
 Comment1 ""
 Comment2 ""
 Comment3 ""

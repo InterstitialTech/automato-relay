@@ -1001,4 +1001,64 @@ Wire Wire Line
 	2400 1650 2400 1850
 Wire Wire Line
 	2400 1850 2450 1850
+$Comp
+L Connector:TestPoint TP1
+U 1 1 60391275
+P 10600 1200
+F 0 "TP1" H 10550 1450 50  0000 L CNN
+F 1 "TestPoint" H 10658 1227 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10800 1200 50  0001 C CNN
+F 3 "~" H 10800 1200 50  0001 C CNN
+	1    10600 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6039F16D
+P 10850 1200
+F 0 "TP2" H 10800 1450 50  0000 L CNN
+F 1 "TestPoint" H 10908 1227 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 11050 1200 50  0001 C CNN
+F 3 "~" H 11050 1200 50  0001 C CNN
+	1    10850 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 6039F84B
+P 11100 1200
+F 0 "TP3" H 11050 1450 50  0000 L CNN
+F 1 "TestPoint" H 11158 1227 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 11300 1200 50  0001 C CNN
+F 3 "~" H 11300 1200 50  0001 C CNN
+	1    11100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 6039F8D3
+P 11350 1200
+F 0 "TP4" H 11300 1450 50  0000 L CNN
+F 1 "TestPoint" H 11408 1227 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 11550 1200 50  0001 C CNN
+F 3 "~" H 11550 1200 50  0001 C CNN
+	1    11350 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 10600 1250 3    50   Input ~ 0
+CTRL1
+Wire Wire Line
+	10600 1200 10600 1250
+Text GLabel 10850 1250 3    50   Input ~ 0
+CTRL2
+Text GLabel 11100 1250 3    50   Input ~ 0
+CTRL3
+Text GLabel 11350 1250 3    50   Input ~ 0
+CTRL4
+Wire Wire Line
+	10850 1200 10850 1250
+Wire Wire Line
+	11100 1200 11100 1250
+Wire Wire Line
+	11350 1200 11350 1250
 $EndSCHEMATC

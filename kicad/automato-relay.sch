@@ -195,7 +195,7 @@ U 1 1 602358DE
 P 6600 1050
 F 0 "J4" V 6750 1100 50  0000 R CNN
 F 1 "Screw_Terminal_01x05" V 6750 1400 50  0001 R CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MC_1,5_5-G-5.08_1x05_P5.08mm_Horizontal" H 6600 1050 50  0001 C CNN
+F 2 "automato-relay:PhoenixContact_1935190_1x5" H 6600 1050 50  0001 C CNN
 F 3 "~" H 6600 1050 50  0001 C CNN
 	1    6600 1050
 	0    -1   -1   0   
@@ -963,7 +963,7 @@ U 1 1 603D90C3
 P 11650 2550
 F 0 "J7" H 11730 2592 50  0000 L CNN
 F 1 "Screw_Terminal_01x05" H 11730 2501 50  0000 L CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MC_1,5_5-G-5.08_1x05_P5.08mm_Horizontal" H 11650 2550 50  0001 C CNN
+F 2 "automato-relay:PhoenixContact_1935190_1x5" H 11650 2550 50  0001 C CNN
 F 3 "~" H 11650 2550 50  0001 C CNN
 	1    11650 2550
 	1    0    0    -1  

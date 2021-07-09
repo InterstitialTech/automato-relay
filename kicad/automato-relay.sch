@@ -237,9 +237,9 @@ Wire Wire Line
 	4500 2200 4550 2200
 Text GLabel 4500 2200 0    50   Input ~ 0
 ACL
-Text GLabel 3400 1350 2    50   Input ~ 0
+Text GLabel 3800 1350 2    50   Input ~ 0
 ACL
-Text GLabel 3400 1650 2    50   Input ~ 0
+Text GLabel 3800 1650 2    50   Input ~ 0
 ACN
 Text GLabel 12550 5250 2    50   Input ~ 0
 ACL
@@ -972,7 +972,7 @@ Wire Wire Line
 	2350 1450 2650 1450
 Connection ~ 2950 1350
 Wire Wire Line
-	2950 1350 3400 1350
+	2950 1350 3500 1350
 Wire Wire Line
 	2650 1550 2650 1650
 Wire Wire Line
@@ -981,7 +981,7 @@ Wire Wire Line
 	2350 1550 2650 1550
 Connection ~ 2950 1650
 Wire Wire Line
-	2950 1650 3400 1650
+	2950 1650 3500 1650
 Wire Wire Line
 	2400 1650 2400 1850
 Wire Wire Line
@@ -1147,4 +1147,21 @@ F 3 "" H 5700 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5700 2500 5700 2550
+$Comp
+L Device:C C8
+U 1 1 60E8BDAC
+P 3500 1500
+F 0 "C8" H 3615 1546 50  0000 L CNN
+F 1 "1 nF" H 3615 1455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm" H 3538 1350 50  0001 C CNN
+F 3 "~" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 1350
+Wire Wire Line
+	3500 1350 3800 1350
+Connection ~ 3500 1650
+Wire Wire Line
+	3500 1650 3800 1650
 $EndSCHEMATC

@@ -215,42 +215,27 @@ Wire Wire Line
 $Comp
 L Converter_ACDC:HLK-PM03 PS1
 U 1 1 602425FA
-P 4600 2500
-F 0 "PS1" H 4600 2825 50  0000 C CNN
-F 1 "HLK-PM03" H 4600 2734 50  0000 C CNN
-F 2 "Converter_ACDC:Converter_ACDC_HiLink_HLK-PMxx" H 4600 2200 50  0001 C CNN
-F 3 "http://www.hlktech.net/product_detail.php?ProId=59" H 5000 2150 50  0001 C CNN
-	1    4600 2500
+P 4950 2300
+F 0 "PS1" H 4950 2625 50  0000 C CNN
+F 1 "HLK-PM03" H 4950 2534 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_HiLink_HLK-PMxx" H 4950 2000 50  0001 C CNN
+F 3 "http://www.hlktech.net/product_detail.php?ProId=59" H 5350 1950 50  0001 C CNN
+	1    4950 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 60242AA4
-P 5050 2650
-F 0 "#PWR05" H 5050 2400 50  0001 C CNN
-F 1 "GND" H 5055 2477 50  0001 C CNN
-F 2 "" H 5050 2650 50  0001 C CNN
-F 3 "" H 5050 2650 50  0001 C CNN
-	1    5050 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 2600 5050 2600
-Wire Wire Line
-	5050 2600 5050 2650
-Text GLabel 5050 2400 2    50   Input ~ 0
+Text GLabel 6000 2200 2    50   Input ~ 0
 3V3
 Wire Wire Line
-	5000 2400 5050 2400
-Text GLabel 4150 2600 0    50   Input ~ 0
+	5350 2200 5700 2200
+Text GLabel 4500 2400 0    50   Input ~ 0
 ACN
 Text GLabel 1150 5250 0    50   Input ~ 0
 ACN
 Wire Wire Line
-	4150 2600 4200 2600
+	4500 2400 4550 2400
 Wire Wire Line
-	4150 2400 4200 2400
-Text GLabel 4150 2400 0    50   Input ~ 0
+	4500 2200 4550 2200
+Text GLabel 4500 2200 0    50   Input ~ 0
 ACL
 Text GLabel 3400 1350 2    50   Input ~ 0
 ACL
@@ -1120,4 +1105,46 @@ Wire Wire Line
 	8750 1250 8750 1500
 Wire Wire Line
 	8750 1250 8850 1250
+$Comp
+L power:GND #PWR05
+U 1 1 60242AA4
+P 5400 2550
+F 0 "#PWR05" H 5400 2300 50  0001 C CNN
+F 1 "GND" H 5405 2377 50  0001 C CNN
+F 2 "" H 5400 2550 50  0001 C CNN
+F 3 "" H 5400 2550 50  0001 C CNN
+	1    5400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2400 5400 2550
+Wire Wire Line
+	5350 2400 5400 2400
+$Comp
+L Device:C C7
+U 1 1 60EB3F05
+P 5700 2350
+F 0 "C7" H 5815 2396 50  0000 L CNN
+F 1 "220 uF" H 5815 2305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5738 2200 50  0001 C CNN
+F 3 "~" H 5700 2350 50  0001 C CNN
+	1    5700 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 2200
+Wire Wire Line
+	5700 2200 6000 2200
+$Comp
+L power:GND #PWR011
+U 1 1 60EC1592
+P 5700 2550
+F 0 "#PWR011" H 5700 2300 50  0001 C CNN
+F 1 "GND" H 5705 2377 50  0001 C CNN
+F 2 "" H 5700 2550 50  0001 C CNN
+F 3 "" H 5700 2550 50  0001 C CNN
+	1    5700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2500 5700 2550
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Thu 25 Feb 2021 02:09:35 PM PST
+update=Thu 15 Jul 2021 11:00:44 PM PDT
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=/home/chrono/nextcloud/interstitial/clients/automato/images/relay/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -255,18 +265,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=EARTH
 Clearance=1
-TrackWidth=0.25
-ViaDiameter=0.8
-ViaDrill=0.4
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/2]
-Name=HV
-Clearance=1.75
-TrackWidth=8
+TrackWidth=5
 ViaDiameter=2
 ViaDrill=1
 uViaDiameter=0.3
@@ -274,13 +273,14 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=/home/chrono/nextcloud/interstitial/clients/automato/images/relay/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
+[pcbnew/Netclasses/2]
+Name=HV
+Clearance=1
+TrackWidth=5
+ViaDiameter=2
+ViaDrill=1
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25

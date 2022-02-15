@@ -1,5 +1,6 @@
 Reference,Quantity,Value,Manufacturer,Manufacturer Part Number,Digikey Part Number
-"D1, D3, D5, D7, D9, D10, D11, D12",8,D,ON Semiconductor,BAS16LT1G,BAS16LT1GOSCT-ND
+"D1, D3, D5, D7",4,Diode,SMC Diode Solutions,1N4007FLTR,1655-1N4007FLTR-ND
+"D9, D10, D11, D12",4,Diode,ON Semiconductor,BAS16LT1G,BAS16LT1GOSCT-ND
 "D2, D4, D6, D8",4,LED,W�rth Elektronik,150120GS75000,732-4990-1-ND
 "J1, J3, J5, J6, J8",5,TE-3-213598-4,TE Connectivity AMP Connectors,3-213598-4,3-213598-4-ND
 J2,1,Screw_Terminal_01x03,Phoenix Contact,1935789,277-6072-ND

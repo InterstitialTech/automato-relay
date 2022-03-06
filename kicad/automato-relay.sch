@@ -237,9 +237,9 @@ Wire Wire Line
 	4500 2200 4550 2200
 Text GLabel 4500 2200 0    50   Input ~ 0
 ACL
-Text GLabel 3800 1350 2    50   Input ~ 0
+Text GLabel 5450 1350 2    50   Input ~ 0
 ACL
-Text GLabel 3800 1650 2    50   Input ~ 0
+Text GLabel 5450 1650 2    50   Input ~ 0
 ACN
 Text GLabel 12550 5250 2    50   Input ~ 0
 ACL
@@ -252,21 +252,8 @@ Wire Wire Line
 	1850 3900 2150 3900
 Text GLabel 2850 3900 2    50   Input ~ 0
 3V3
-$Comp
-L Connector:Screw_Terminal_01x03 J2
-U 1 1 602EE614
-P 2150 1550
-F 0 "J2" H 2300 1550 50  0000 C CNN
-F 1 "Screw_Terminal_01x03" H 2068 1316 50  0001 C CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_3-G-5.08_1x03_P5.08mm_Vertical" H 2150 1550 50  0001 C CNN
-F 3 "~" H 2150 1550 50  0001 C CNN
-	1    2150 1550
-	-1   0    0    1   
-$EndComp
-Text GLabel 2450 1850 2    50   Input ~ 0
+Text GLabel 2300 1550 2    50   Input ~ 0
 ACE
-Wire Wire Line
-	2350 1650 2400 1650
 Text GLabel 12050 5850 3    50   Input ~ 0
 ACE
 Text GLabel 1650 5850 3    50   Input ~ 0
@@ -934,36 +921,18 @@ $EndComp
 $Comp
 L Device:Varistor V1
 U 1 1 60401D0D
-P 2950 1500
-F 0 "V1" H 3053 1546 50  0000 L CNN
-F 1 "Varistor" H 3053 1455 50  0000 L CNN
-F 2 "Varistor:RV_Disc_D15.5mm_W3.9mm_P7.5mm" V 2880 1500 50  0001 C CNN
-F 3 "~" H 2950 1500 50  0001 C CNN
-	1    2950 1500
+P 4750 1500
+F 0 "V1" H 4853 1546 50  0000 L CNN
+F 1 "Varistor" H 4853 1455 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D15.5mm_W3.9mm_P7.5mm" V 4680 1500 50  0001 C CNN
+F 3 "~" H 4750 1500 50  0001 C CNN
+	1    4750 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 1450 2650 1350
+	4750 1350 5250 1350
 Wire Wire Line
-	2650 1350 2950 1350
-Wire Wire Line
-	2350 1450 2650 1450
-Connection ~ 2950 1350
-Wire Wire Line
-	2950 1350 3500 1350
-Wire Wire Line
-	2650 1550 2650 1650
-Wire Wire Line
-	2650 1650 2950 1650
-Wire Wire Line
-	2350 1550 2650 1550
-Connection ~ 2950 1650
-Wire Wire Line
-	2950 1650 3500 1650
-Wire Wire Line
-	2400 1650 2400 1850
-Wire Wire Line
-	2400 1850 2450 1850
+	4750 1650 5250 1650
 $Comp
 L Connector:TestPoint TP1
 U 1 1 60391275
@@ -1128,20 +1097,18 @@ Wire Wire Line
 $Comp
 L Device:C C8
 U 1 1 60E8BDAC
-P 3500 1500
-F 0 "C8" H 3615 1546 50  0000 L CNN
-F 1 "1 nF" H 3615 1455 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm" H 3538 1350 50  0001 C CNN
-F 3 "~" H 3500 1500 50  0001 C CNN
-	1    3500 1500
+P 5250 1500
+F 0 "C8" H 5365 1546 50  0000 L CNN
+F 1 "1 nF" H 5365 1455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm" H 5288 1350 50  0001 C CNN
+F 3 "~" H 5250 1500 50  0001 C CNN
+	1    5250 1500
 	1    0    0    -1  
 $EndComp
-Connection ~ 3500 1350
 Wire Wire Line
-	3500 1350 3800 1350
-Connection ~ 3500 1650
+	5250 1350 5450 1350
 Wire Wire Line
-	3500 1650 3800 1650
+	5250 1650 5450 1650
 $Comp
 L Device:D D11
 U 1 1 60390043
@@ -1163,5 +1130,96 @@ F 2 "Diode_SMD:D_SOT-23_ANK" H 10350 3400 50  0001 C CNN
 F 3 "~" H 10350 3400 50  0001 C CNN
 	1    10350 3400
 	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 1550 2300 1550
+Wire Wire Line
+	2250 1350 2200 1350
+Wire Wire Line
+	2200 1350 2200 1450
+Connection ~ 5250 1350
+Connection ~ 5250 1650
+$Comp
+L Device:LED D14
+U 1 1 6218C0A6
+P 4050 1700
+F 0 "D14" V 4089 1582 50  0000 R CNN
+F 1 "LED" V 3998 1582 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 4050 1700 50  0001 C CNN
+F 3 "~" H 4050 1700 50  0001 C CNN
+	1    4050 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D13
+U 1 1 6218C0AC
+P 3850 1700
+F 0 "D13" V 3800 1500 50  0000 L CNN
+F 1 "D" V 3900 1500 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 3850 1700 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 1550 3950 1550
+Connection ~ 3950 1550
+Wire Wire Line
+	3950 1550 4050 1550
+$Comp
+L Device:C_Small C9
+U 1 1 6218C0BB
+P 3950 1450
+F 0 "C9" H 4042 1496 50  0000 L CNN
+F 1 "47n" H 4042 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3950 1450 50  0001 C CNN
+F 3 "~" H 3950 1450 50  0001 C CNN
+	1    3950 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 1350
+Connection ~ 3950 1350
+Wire Wire Line
+	3950 1350 4750 1350
+Wire Wire Line
+	2200 1650 3550 1650
+Wire Wire Line
+	3550 1650 3550 1850
+Wire Wire Line
+	4400 1850 4400 1650
+Wire Wire Line
+	4400 1650 4750 1650
+Wire Wire Line
+	3550 1850 3850 1850
+Connection ~ 3850 1850
+Wire Wire Line
+	3850 1850 4050 1850
+Connection ~ 4050 1850
+Wire Wire Line
+	4050 1850 4400 1850
+Connection ~ 4750 1650
+Wire Wire Line
+	2650 1350 3950 1350
+$Comp
+L automato-relay:IEC-C14-FUSE J2
+U 1 1 62295365
+P 1950 1550
+F 0 "J2" H 1933 1965 50  0000 C CNN
+F 1 "IEC-C14-FUSE" H 1933 1874 50  0000 C CNN
+F 2 "automato-relay:PF0011-15-PC" V 1950 1550 50  0001 C CNN
+F 3 "" V 1950 1550 50  0001 C CNN
+	1    1950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 62108163
+P 2450 1350
+F 0 "SW1" H 2450 1585 50  0000 C CNN
+F 1 "SW_SPST" H 2450 1494 50  0000 C CNN
+F 2 "automato-relay:RA1H1C112R" H 2450 1350 50  0001 C CNN
+F 3 "~" H 2450 1350 50  0001 C CNN
+	1    2450 1350
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

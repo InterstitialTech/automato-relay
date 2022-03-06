@@ -1,4 +1,4 @@
-18995999546799454
+19039154985482174
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83027,12 +83027,54 @@ varistor SIOV
 2
 2
 automato-relay
+703W-00-54
+
+
+0
+5
+3
+automato-relay
+PF0011-15-PC
+
+
+0
+3
+3
+automato-relay
+PX0757
+
+
+0
+3
+3
+automato-relay
 PhoenixContact_1935190_1x5
 Generic Phoenix Contact connector footprint for: MSTBA_2,5/5-G; number of pins: 05; pin pitch: 5.00mm; Angled || order number: 1757501 12A || order number: 1923788 16A (HC)
 phoenix_contact connector MSTBA_01x05_G_5.00mm
 0
 5
 5
+automato-relay
+QMB-152-11C3N-3BA
+
+
+0
+2
+2
+automato-relay
+RA1H1C112R
+
+
+0
+2
+2
+automato-relay
+Shocksafe-Fuseholder
+
+
+0
+2
+2
 automato-relay
 TE-3-213598-4
 

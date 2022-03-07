@@ -1,0 +1,24 @@
+tracewidth:
+	
+https://www.smps.us/pcb-calculator.html
+current: 15A
+Temperature rise: 20 deg c
+copper weight: 2 oz
+pcb thickness: 94 mils
+copper plane?: yes
+plane area: 18 sq in
+distance to plane: 94mm
+
+results: 223mils trace width (5.6mm)
+
+----
+
+creepage:
+
+https://www.smps.us/pcbtracespacing.html
+voltage: 250v ac = 353vpeak
+
+spacing: 2.5mm
+
+voltage: 120v ac = 169vpeak
+spacing: 1.44mm

@@ -136,74 +136,34 @@ LATCH
 Wire Wire Line
 	8300 2200 8350 2200
 $Comp
-L power:GND #PWR06
-U 1 1 601F84F8
-P 6400 1300
-F 0 "#PWR06" H 6400 1050 50  0001 C CNN
-F 1 "GND" H 6405 1127 50  0001 C CNN
-F 2 "" H 6400 1300 50  0001 C CNN
-F 3 "" H 6400 1300 50  0001 C CNN
-	1    6400 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 1250 6400 1300
-Wire Wire Line
-	6500 1250 6500 1300
-Wire Wire Line
-	6600 1250 6600 1300
-Wire Wire Line
-	6700 1250 6700 1300
-$Comp
 L power:GND #PWR012
 U 1 1 60208E2A
-P 11400 2750
-F 0 "#PWR012" H 11400 2500 50  0001 C CNN
-F 1 "GND" H 11405 2577 50  0001 C CNN
-F 2 "" H 11400 2750 50  0001 C CNN
-F 3 "" H 11400 2750 50  0001 C CNN
-	1    11400 2750
+P 12200 4250
+F 0 "#PWR012" H 12200 4000 50  0001 C CNN
+F 1 "GND" H 12205 4077 50  0001 C CNN
+F 2 "" H 12200 4250 50  0001 C CNN
+F 3 "" H 12200 4250 50  0001 C CNN
+	1    12200 4250
 	0    1    1    0   
 $EndComp
-Text GLabel 6500 1300 3    50   Input ~ 0
+Text GLabel 12200 4150 0    50   Input ~ 0
 CLK
-Text GLabel 6600 1300 3    50   Input ~ 0
-SDI
-Text GLabel 6700 1300 3    50   Input ~ 0
-LATCH
-Text GLabel 11400 2650 0    50   Input ~ 0
-CLK
-Text GLabel 11400 2450 0    50   Input ~ 0
+Text GLabel 12200 3950 0    50   Input ~ 0
 LATCH
 Wire Wire Line
-	11450 2450 11400 2450
+	12250 3950 12200 3950
 Wire Wire Line
-	11400 2650 11450 2650
+	12200 4150 12250 4150
 Wire Wire Line
-	11400 2750 11450 2750
+	12200 4250 12250 4250
 Text GLabel 9200 2600 2    50   Input ~ 0
 SDO
 Wire Wire Line
 	9150 2600 9200 2600
-Text GLabel 11400 2550 0    50   Input ~ 0
+Text GLabel 12200 4050 0    50   Input ~ 0
 SDO
 Wire Wire Line
-	11450 2550 11400 2550
-$Comp
-L Connector:Screw_Terminal_01x05 J4
-U 1 1 602358DE
-P 6600 1050
-F 0 "J4" V 6750 1100 50  0000 R CNN
-F 1 "Screw_Terminal_01x05" V 6750 1400 50  0001 R CNN
-F 2 "automato-relay:PhoenixContact_1935190_1x5" H 6600 1050 50  0001 C CNN
-F 3 "~" H 6600 1050 50  0001 C CNN
-	1    6600 1050
-	0    -1   -1   0   
-$EndComp
-Text GLabel 6800 1300 3    50   Input ~ 0
-3V3
-Wire Wire Line
-	6800 1250 6800 1300
+	12250 4050 12200 4050
 Text GLabel 8300 2000 0    50   Input ~ 0
 3V3
 Wire Wire Line
@@ -910,12 +870,12 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x05 J7
 U 1 1 603D90C3
-P 11650 2550
-F 0 "J7" H 11730 2592 50  0000 L CNN
-F 1 "Screw_Terminal_01x05" H 11730 2501 50  0000 L CNN
-F 2 "automato-relay:PhoenixContact_1935190_1x5" H 11650 2550 50  0001 C CNN
-F 3 "~" H 11650 2550 50  0001 C CNN
-	1    11650 2550
+P 12450 4050
+F 0 "J7" H 12530 4092 50  0000 L CNN
+F 1 "Screw_Terminal_01x05" H 12530 4001 50  0000 L CNN
+F 2 "automato-relay:PhoenixContact_1935190_1x5" H 12450 4050 50  0001 C CNN
+F 3 "~" H 12450 4050 50  0001 C CNN
+	1    12450 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1222,4 +1182,96 @@ F 3 "~" H 2450 1350 50  0001 C CNN
 	1    2450 1350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 622AE17B
+P 1100 2750
+F 0 "J?" H 1207 3617 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1207 3526 50  0000 C CNN
+F 2 "" H 1250 2750 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1250 2750 50  0001 C CNN
+	1    1100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 622B08FA
+P 12800 2700
+F 0 "J?" H 12370 2639 50  0000 R CNN
+F 1 "USB_C_Receptacle_USB2.0" H 12370 2548 50  0000 R CNN
+F 2 "" H 12950 2700 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 12950 2700 50  0001 C CNN
+	1    12800 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 622E300C
+P 1100 3650
+F 0 "#PWR?" H 1100 3400 50  0001 C CNN
+F 1 "GND" H 1105 3477 50  0001 C CNN
+F 2 "" H 1100 3650 50  0001 C CNN
+F 3 "" H 1100 3650 50  0001 C CNN
+	1    1100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 622E354D
+P 800 3650
+F 0 "#PWR?" H 800 3400 50  0001 C CNN
+F 1 "GND" H 805 3477 50  0001 C CNN
+F 2 "" H 800 3650 50  0001 C CNN
+F 3 "" H 800 3650 50  0001 C CNN
+	1    800  3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 2150 2    50   Input ~ 0
+3V3
+Text GLabel 1700 3250 2    50   Input ~ 0
+LATCH
+Text GLabel 1700 2650 2    50   Input ~ 0
+CLK
+Text GLabel 1700 2850 2    50   Input ~ 0
+SDI
+Wire Wire Line
+	1700 2650 1700 2750
+Wire Wire Line
+	1700 2850 1700 2950
+Wire Wire Line
+	1700 3250 1700 3350
+$Comp
+L power:GND #PWR?
+U 1 1 6231482E
+P 12800 3600
+F 0 "#PWR?" H 12800 3350 50  0001 C CNN
+F 1 "GND" H 12805 3427 50  0001 C CNN
+F 2 "" H 12800 3600 50  0001 C CNN
+F 3 "" H 12800 3600 50  0001 C CNN
+	1    12800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62314C83
+P 13100 3600
+F 0 "#PWR?" H 13100 3350 50  0001 C CNN
+F 1 "GND" H 13105 3427 50  0001 C CNN
+F 2 "" H 13100 3600 50  0001 C CNN
+F 3 "" H 13100 3600 50  0001 C CNN
+	1    13100 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 12200 2600 0    50   Input ~ 0
+CLK
+Text GLabel 12200 2800 0    50   Input ~ 0
+SDO
+Text GLabel 12200 3200 0    50   Input ~ 0
+LATCH
+Wire Wire Line
+	12200 3200 12200 3300
+Wire Wire Line
+	12200 2800 12200 2900
+Wire Wire Line
+	12200 2600 12200 2700
 $EndSCHEMATC

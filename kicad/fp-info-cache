@@ -1,4 +1,4 @@
-19039154985482174
+19040801920274310
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83082,3 +83082,10 @@ TE-3-213598-4
 0
 3
 3
+automato-relay
+USB_C_Receptacle_GCT-USB4105
+USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf
+usb usb-c 2.0 pd
+0
+20
+17

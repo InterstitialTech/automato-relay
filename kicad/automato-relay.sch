@@ -135,35 +135,10 @@ Text GLabel 8300 2200 0    50   Input ~ 0
 LATCH
 Wire Wire Line
 	8300 2200 8350 2200
-$Comp
-L power:GND #PWR012
-U 1 1 60208E2A
-P 12200 4250
-F 0 "#PWR012" H 12200 4000 50  0001 C CNN
-F 1 "GND" H 12205 4077 50  0001 C CNN
-F 2 "" H 12200 4250 50  0001 C CNN
-F 3 "" H 12200 4250 50  0001 C CNN
-	1    12200 4250
-	0    1    1    0   
-$EndComp
-Text GLabel 12200 4150 0    50   Input ~ 0
-CLK
-Text GLabel 12200 3950 0    50   Input ~ 0
-LATCH
-Wire Wire Line
-	12250 3950 12200 3950
-Wire Wire Line
-	12200 4150 12250 4150
-Wire Wire Line
-	12200 4250 12250 4250
 Text GLabel 9200 2600 2    50   Input ~ 0
 SDO
 Wire Wire Line
 	9150 2600 9200 2600
-Text GLabel 12200 4050 0    50   Input ~ 0
-SDO
-Wire Wire Line
-	12250 4050 12200 4050
 Text GLabel 8300 2000 0    50   Input ~ 0
 3V3
 Wire Wire Line
@@ -868,17 +843,6 @@ Connection ~ 2150 3900
 Wire Wire Line
 	2150 3900 2200 3900
 $Comp
-L Connector:Screw_Terminal_01x05 J7
-U 1 1 603D90C3
-P 12450 4050
-F 0 "J7" H 12530 4092 50  0000 L CNN
-F 1 "Screw_Terminal_01x05" H 12530 4001 50  0000 L CNN
-F 2 "automato-relay:PhoenixContact_1935190_1x5" H 12450 4050 50  0001 C CNN
-F 3 "~" H 12450 4050 50  0001 C CNN
-	1    12450 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Varistor V1
 U 1 1 60401D0D
 P 4750 1500
@@ -1183,32 +1147,32 @@ F 3 "~" H 2450 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
+L Connector:USB_C_Receptacle_USB2.0 J4
 U 1 1 622AE17B
 P 1100 2750
-F 0 "J?" H 1207 3617 50  0000 C CNN
+F 0 "J4" H 1207 3617 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1207 3526 50  0000 C CNN
-F 2 "" H 1250 2750 50  0001 C CNN
+F 2 "automato-relay:USB_C_Receptacle_GCT-USB4105" H 1250 2750 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1250 2750 50  0001 C CNN
 	1    1100 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
+L Connector:USB_C_Receptacle_USB2.0 J7
 U 1 1 622B08FA
 P 12800 2700
-F 0 "J?" H 12370 2639 50  0000 R CNN
+F 0 "J7" H 12370 2639 50  0000 R CNN
 F 1 "USB_C_Receptacle_USB2.0" H 12370 2548 50  0000 R CNN
-F 2 "" H 12950 2700 50  0001 C CNN
+F 2 "automato-relay:USB_C_Receptacle_GCT-USB4105" H 12950 2700 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 12950 2700 50  0001 C CNN
 	1    12800 2700
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 622E300C
 P 1100 3650
-F 0 "#PWR?" H 1100 3400 50  0001 C CNN
+F 0 "#PWR0101" H 1100 3400 50  0001 C CNN
 F 1 "GND" H 1105 3477 50  0001 C CNN
 F 2 "" H 1100 3650 50  0001 C CNN
 F 3 "" H 1100 3650 50  0001 C CNN
@@ -1216,10 +1180,10 @@ F 3 "" H 1100 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 622E354D
 P 800 3650
-F 0 "#PWR?" H 800 3400 50  0001 C CNN
+F 0 "#PWR0102" H 800 3400 50  0001 C CNN
 F 1 "GND" H 805 3477 50  0001 C CNN
 F 2 "" H 800 3650 50  0001 C CNN
 F 3 "" H 800 3650 50  0001 C CNN
@@ -1241,10 +1205,10 @@ Wire Wire Line
 Wire Wire Line
 	1700 3250 1700 3350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 6231482E
 P 12800 3600
-F 0 "#PWR?" H 12800 3350 50  0001 C CNN
+F 0 "#PWR0103" H 12800 3350 50  0001 C CNN
 F 1 "GND" H 12805 3427 50  0001 C CNN
 F 2 "" H 12800 3600 50  0001 C CNN
 F 3 "" H 12800 3600 50  0001 C CNN
@@ -1252,10 +1216,10 @@ F 3 "" H 12800 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 62314C83
 P 13100 3600
-F 0 "#PWR?" H 13100 3350 50  0001 C CNN
+F 0 "#PWR0104" H 13100 3350 50  0001 C CNN
 F 1 "GND" H 13105 3427 50  0001 C CNN
 F 2 "" H 13100 3600 50  0001 C CNN
 F 3 "" H 13100 3600 50  0001 C CNN

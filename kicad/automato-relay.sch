@@ -1156,7 +1156,7 @@ F 3 "" H 800 3650 50  0001 C CNN
 $EndComp
 Text GLabel 1700 2150 2    50   Input ~ 0
 3V3
-Text GLabel 1700 3250 2    50   Input ~ 0
+Text GLabel 1700 2350 2    50   Input ~ 0
 LATCH
 Text GLabel 1700 2650 2    50   Input ~ 0
 CLK
@@ -1166,8 +1166,6 @@ Wire Wire Line
 	1700 2650 1700 2750
 Wire Wire Line
 	1700 2850 1700 2950
-Wire Wire Line
-	1700 3250 1700 3350
 $Comp
 L power:GND #PWR0103
 U 1 1 6231482E
@@ -1194,10 +1192,8 @@ Text GLabel 12200 2600 0    50   Input ~ 0
 CLK
 Text GLabel 12200 2800 0    50   Input ~ 0
 SDO
-Text GLabel 12200 3200 0    50   Input ~ 0
+Text GLabel 12200 2300 0    50   Input ~ 0
 LATCH
-Wire Wire Line
-	12200 3200 12200 3300
 Wire Wire Line
 	12200 2800 12200 2900
 Wire Wire Line
@@ -1301,4 +1297,8 @@ Wire Wire Line
 Wire Wire Line
 	4400 1650 4400 2100
 Connection ~ 3550 1850
+Wire Wire Line
+	1700 2350 1700 2450
+Wire Wire Line
+	12200 2300 12200 2400
 $EndSCHEMATC
